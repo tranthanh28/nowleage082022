@@ -123,5 +123,20 @@ vi /etc/apache2/sites-enabled/phpmyadmin.conf  //file config phpmyadmin
 
 sudo lsof -i -P -n
 sudo lsof -i -P -n | grep LISTEN
-
-
+===========================================repair tus
+  cd /var/www/whitelign/
+ 1985  ls
+ 1986  vi .env
+ 1987  service redis-server status
+ 1988  service redis-server start
+ 1989  service redis-server status
+ 1990  service redis-server restart
+ 1991  clear
+ 1992  service redis-server status
+ 1993  chown -R redis:redis /var/log/redis
+ 1994  mkdir /var/log/redis
+ 1995  chown -R redis:redis /var/log/redis
+ 1996  chmod -R u+rwX,g+rwX,u+rx /var/log/redis
+ 1997  chmod +r /etc/redis/redis.conf
+ 1998  service redis-server restart
+ 1999  service redis-server status
