@@ -1,0 +1,9 @@
+php artisan migrate --path=/database/migrations/test/
+php artisan migrate:refresh --path=/database/migrations/fileName.php
+
+------------------seeder---------------------------------
+php artisan make:seeder UserSeeder
+php artisan db:seed 
+php artisan db:seed --class=UserSeeder
+
+composer dump-autoload

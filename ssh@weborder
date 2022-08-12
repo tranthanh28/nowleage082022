@@ -1,0 +1,127 @@
+## SSH Server + IP Address: 202.182.106.66 +
+Username: root
+Password:
+## Database + URL: http://phpmyadmin.proteanstudios.com/
+ Access Info: adminer / Qo0w@NaF49bNC123
+ 
+ 
+ ===========================weborder stg
+
+ssh root@202.182.106.66
+
+pass: r)6WRuv%gVdd($*E
+
+cd /var/www/web-order/
+
+git branch
+
+
+
+
+==========================whitelign stg
+
+ssh root@202.182.106.66
+r)6WRuv%gVdd($*E
+Pass DB stg : nrOAzubPOct8
+
+
+==============================
+merge vào nhánh stagging_29072022
+Chạy npm run development
+SSH vào server
+pull nhánh stagging_29072022 về.
+nếu có seeder hay migration thì chạy trực tiếp luôn
+
+
+ông thêm key vào file lang
+chạy php artisan vue-i18n:generate
+npm run production
+push tất cả các file vừa changed
+ssh vào server. git pull origin develop 
+
+
+//==========================================================account whitelign stg
+https://whitelign.proteanstudios.com/request
+ngoanbt.pros.hn@gmail.com/123456789
+mgt@n-correct.org/123123
+
+
+//
+
+khong thay doi file storage/google/
+
+============================================================product whitelign ssh
+
+cd ~
+mysql -u root -p form_clinic > form_clinic_20220808.sql
+
+chmod -R 400 20201002162613.pem
+
+ssh -i 20201002162613.pem root@118.27.37.252
+
+Prod whitelign
+cd /var/www/html/clinic-form/
+
+
+
+====================================================product weborder
+https://drive.google.com/file/d/1_LoHmGBHO56dJXVF6RGYcP0bDBzB6Xpq/view?usp=sharing
+ssh -i ~/.ssh/motorlinks-monet -p 10022 monet@sv95.xserver.jp
+pass: Motorlinks@55
+
+cd /home/monet/
+
+mysqldump -h 157.112.148.34 -u monet_weborder -p monet_weborder > bk_web_order_220803.sql
+
+mysqldump -h 157.112.148.34 -u monet_weborder -p monet_weborder > bk_web_order_220802.sql
+
+mysqldump -h 157.112.148.34 -u monet_weborder -p monet_weborder > bk_web_order_220720.sql
+
+/usr/bin/php7.4 artisan weborder:generate-order
+
+php artisan weborder:generate-order
+
+cd /home/monet/proteanstudios.com/public_html/order_bak/
+
+vi storage/logs/laravel-2022-07-29.log
+
+mysql -h 157.112.148.34 -u monet_weborder -p
+
+pwd
+
+history
+
+history | grep cd
+
+php7.4 artisan migrate
+
+php7.4 artisan smaregi:update-store
+
+/usr/bin/php7.4 artisan weborder:generate-order
+
+1. find . -name thisfile.txt
+
+If you need to know how to find a file in Linux called thisfile.txt, it will look for it in current and sub-directories.
+
+2. find /home -name *.jpg
+
+Look for all .jpg files in the /home and directories below it.
+
+3. find . -type f -empty
+
+Look for an empty file inside the current directory.
+
+4. find /home -user randomperson-mtime 6 -iname ".db"
+
+//////////////////////////////////////
+SHOPIFY_API_KEY=14af768e86ccba6835572cbbcc0bcf70 yarn build
+composer build
+systemctl reload apache2
+npm run build --api-key=14af768e86ccba6835572cbbcc0bcf70
+tail -f storage/logs/laravel.log
+vi /etc/apache2/sites-enabled/phpmyadmin.conf  //file config phpmyadmin
+
+sudo lsof -i -P -n
+sudo lsof -i -P -n | grep LISTEN
+
+

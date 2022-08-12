@@ -1,0 +1,23 @@
+==============================10/8
+export database web-order trên stg
+
+delete data supplier-product cũ.
+
+=============================11/8
+https://redmine.proteanstudios.com/issues/4875
+
+1. Đổi tên Q14.1 thành Q 14.2
+2.Thêm vào phía trên Q14.2 Mục:
+Q14.1 「シミュレーションの実施」
+・クリニック
+・技工所
+
+tao cột option_simulation vào bảng request: migrate, model
+
+Thêm text title: シミュレーションの実施
+
+Xử lý lưu option_simulation => hiển thị form=>confirm =>mail => pdf
+
+
+======================================12/8
+

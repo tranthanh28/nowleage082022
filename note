@@ -1,0 +1,156 @@
+Thay đổi text ở màn detail mission
+
+
+ssh git lab
+
+nginx
+
+debuger
+
+larave debugbar
+
+cte laravel
+WITH recursive laravel_cte AS ((
+                    SELECT
+                        user_tree.user_id,
+                        user_tree.parent_id
+                    FROM
+                        user_tree
+                    WHERE
+                            user_tree.parent_id = {$userId}
+                            ) UNION ALL
+                    (
+                    SELECT
+                        user_tree.user_id,
+                        user_tree.parent_id
+                    FROM
+                        user_tree
+                        INNER JOIN laravel_cte ON laravel_cte.user_id = user_tree.parent_id
+                    )) SELECT
+                *
+            FROM
+                laravel_cte ";
+                https://data-fun.com/mysql-common-table-expression-with/
+                
+                https://www.youtube.com/watch?v=ubfxi21M1vQ
+                
+                
+public function registerMediaCollections(): void
+    {
+        $this
+            ->addMediaCollection('avatar')
+            ->singleFile()
+            ->useFallbackUrl('/admin/global_assets/images/placeholders/placeholder.jpg');
+    }
+    
+public function registerMediaCollections(): void
+    {
+        $this
+            ->addMediaCollection('avatar')
+            ->singleFile()
+            ->useFallbackUrl('/admin/global_assets/images/placeholders/placeholder.jpg');
+    }
+                
+                
+                gom nhom 1 phan thay doi
+                
+                
+$edit_statusDraft       = (int)\app\Models\Order::STATUS_DRAFT;
+
+$activeStatus == \App\Constants\OrderConst::STATUS_DRAFT
+
+<?php } ?>
+
+ git config core.filemode false
+ 
+ 
+ app\https\client
+ 
+ upsert laravel 8
+ 
+ 
+ array_map
+ $filteredItems = array_map(function ($item) use ($currentRate) {
+            return [
+                'smaregi_id'    => $item['productId'],
+                'name'          => $item['productName'],
+                'unit_price'    => !empty($currentRate) ? $item['cost']/$currentRate : 0,
+                'selling_price' => $item['price'] ?? 0,
+                'internal_code' => $item['productCode'],
+                'category_id'   => $item['categoryId'],
+                'memo'          => $item['description'],
+                'size'          => $item['size'],
+                'color'         => $item['color']
+            ];
+        }, $items);
+        
+        https://www.jetbrains.com/help/datagrip/connectivity-problems.html#ssh
+            
+            
+            
+            https://viblo.asia/p/5-laravel-helpers-huu-ich-doi-voi-ban-RnB5pNG6ZPG
+            
+            
+laravel - Add new auto increment column to existing table
+\\
+    public function up()
+    {
+        Schema::table('supplier_products', function (Blueprint $table) {
+            $table->dropForeign('fk_product_id_supplier_products');
+            $table->dropPrimary('product_id');
+            $table->foreign('product_id', 'fk_product_id_supplier_products')->references('id')->on('products')->onUpdate('RESTRICT')->onDelete('RESTRICT');
+        });
+        Schema::table('supplier_products', function (Blueprint $table) {
+            $table->unsignedInteger('id', true)->first();
+        });
+    }
+    public function down()
+    {
+        Schema::table('supplier_products', function (Blueprint $table) {
+            $table->dropColumn('id');
+            $table->primary('product_id');
+        });
+    }
+   \\
+   
+    if (!$this->order->products()->allRelatedIds()->contains($product->id)) {
+                $this->order->products()->attach([$product->id => $dataOrderProduct]);
+                continue;
+            }
+            $this->order->products()->updateExistingPivot($product->id, $dataOrderProduct);
+            
+            //
+            
+            Required parameter $xxx follows optional parameter $yyy
+   //
+   
+   Fix access denied docker php-myadmin
+   
+   Spin up a new container docker run -d -e PMA_ARBITRARY=1 --env UPLOAD_LIMIT=40M -p 50005:80 phpmyadmin
+Exec into the container docker exec -it <containerID> bash
+Install vim apt update && apt install vim --yes
+Use vim to edit the config file vim /etc/phpmyadmin/config.user.inc.php
+Add a configuration line, for example $cfg['ShowServerInfo'] = false;
+Save / quit vim, and go to the phpMyAdmin home page.
+Observe that the server information still appears, despite the configuration setting
+If you place the configuration setting into config.inc.php, however, then it works as expected.
+
+//
+
+backup db php storm
+
+//
+tus upload with laravel
+
+//
+
+collate = utf8mb4_unicode_ci;
+
+//
+
+file storage
+
+https://viblo.asia/p/tim-hieu-ve-file-storage-cua-laravel-gGJ59jBpKX2
+
+
+

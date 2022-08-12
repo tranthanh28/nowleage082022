@@ -1,0 +1,29 @@
+hỏi database
+
+bảng trung gian supplier_product đang để khóa chính là product_id
+=>sửa lại khóa chính.
+
+
+<img src="{{ asset('company/images/pen-icon.png')}}" alt="">
+
+
+ $survey_history = [
+                'user_id'    => Auth::user()->id,
+                'survey_id'  => $survey->id,
+                'email'      => $survey->email,
+                'x'          => $survey->x,
+                'y'          => $survey->y,
+                'z'          => $survey->z,
+                'content'    => $survey->content,
+                'company_id' => Auth::user()->company_id,
+                'status'     => $survey->company_id,
+                'created_at' => $survey->updated_at,
+                
+                
+Check xem left jont của bảng trung gian có lặp không?            
+
+
+
+Xem comsumed product data
+
+step khi xử lý order . ở bước sau khi thanh toán trạng thái là gì.

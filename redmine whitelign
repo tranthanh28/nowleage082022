@@ -1,0 +1,36 @@
+
+
+=========================== 4770: done
+
+Hiện nay ở trong file PDF có oder ID rồi nhưng khách muốn check nhanh nên muốn thêm vào tiêu đề mail
+
+
+============================= 4772
+Nếu ở Q1 chọn アライナー và ở Q14 chọn ホワイライン
+thì bắt buộc phải chọn 2 option dưới đây
+option1:クリニック
+option2:技工所
+Default: là không chọn gì
+Nhưng phải chọn
+
+
+=========================4773 inprocess
+Ở Q1 chọn 補綴・リテーナー・ホワイトニングトレー等 thì ở Q13-1 làm như sau: 
+Thêm 1 options vào vị trí thú 3 từ dưới lên, để phía trên option SMOP55
+Text: 模型のみ
+Title mail: 「マウスピース関連指示書」
+
+====================4774
+Ở Q1 chọn 補綴・リテーナー・ホワイトニングトレー等 thì ở Q13-1 làm như sau
+Thêm option tại Q13-1
+Text: ホワイトリテーナー
+Vị trí: để ở phía dưới option đánh dấu đỏ https://prnt.sc/P4HiwAEjL_Gq
+Title mail: 「マウスピース関連指示書」
+Thêm checkbox cho option này (text là 上顎/下顎, https://www.evernote.com/l/AMlc32NGna1EoK7gPkWUvYTFpJDxIs-EqEg)
+
+======================4776 Thêm radio button khi chọn マウスピースリテーナー ở Q13-1
+Khi chọn nút mới đổi text ở task này https://redmine.proteanstudios.com/issues/4775
+thì thêm option Q13-3 và Q13-4
+Type của nút: radio button
+option1: 前歯 削合:　〇あり　〇なし
+option2: 臼歯 削合:　〇あり　〇なし

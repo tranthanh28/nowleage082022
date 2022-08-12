@@ -1,0 +1,17 @@
+DB_CONNECTION=mysql
+DB_HOST=157.112.148.34
+DB_PORT=3306
+DB_DATABASE=monet_weborder
+DB_USERNAME=monet_weborder
+DB_PASSWORD=Web0rder55
+
+
+
+Db whilite product:
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=form_clinic
+DB_USERNAME=root
+DB_PASSWORD=u3Lh%&YhV]9aaA7f

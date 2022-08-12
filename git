@@ -1,0 +1,26 @@
+git reset --soft B: Sẽ đưa HEAD về vị trí commit B, giữ nguyên các thay đổi đã được git add tại B trong Staging Area. Tương ứng với tại B ta vừa git add xong, khi này chỉ việc git commit là ta lại có commit như C bên trên.
+git reset B: Sẽ đưa HEAD về vị trí commit B, đồng thời đưa các thay đổi về Working directory. Tương ứng với tại B ta vừa cột xong, chưa git add.
+git reset --hard B: Sẽ đưa HEAD về vị trí commit B, đồng thời loại bỏ tất cả các thay đổi tại B. Tương ứng với tại B ta chưa cột gì cả, xong phim.
+
+
+
+https://stackoverflow.com/questions/17404316/the-following-untracked-working-tree-files-would-be-overwritten-by-merge-but-i
+
+git clean  -d  -f .
+
+git add * 
+git stash
+git pull
+
+
+git diff HEAD <file_name>
+git diff <file_name>
+git diff --staged <file_name> or  git diff --cached <file_name>,
+git diff <branch_name1> <branch_name2> <file_name>
+git diff <commit_hash> <commit_hash> <file_name>
+
+
+
+git remote add origin URL
+git remote remove origin
+git remote show origin
