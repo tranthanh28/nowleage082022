@@ -161,5 +161,50 @@ laravel-nestedset
 notify laravel
 
 https://viblo.asia/p/laravel-tim-hieu-ve-notifications-phan-1-Az45bbMV5xY
-//
+//================================ bị cache file js và css trong public
+F12=> disable cache
+
+src="/css/styles.css?v={random number/string}"
+
+To force chrome to reaload css and js:
+
+Windows option 1: CTRL + SHIFT + R
+Windows option 2: SHIFT + F5
+
+OS X: ⌘ + SHIFT + R
+///////////////////////////
+
+form custom tạo câu hỏi diamond -star
+//////////////////////////////
+
+
+Memcache laravel.
+
+///////////////////////////////
+
+redis+hozizon laravel queue
+////
+resource and resourceCollection
+https://blog.haposoft.com/ban-da-su-dung-dung-resouce-api-laravel/
+
+Chú ý: thêm đoạn mã nào vào routes\api.php để debug
+
+\DB::listen(function($query) {
+    var_dump($query->sql);
+});
+
+class AlbumResource extends JsonResource
+{
+    public function toArray($request)
+    {
+        return [
+            'name' => $this->name,
+            // other attributes
+            'songs' => SongsResource::collection($this->whenLoaded('songs')),
+            $this->mergeWhen($this->songs->count() > 3
+
+                , ['updated_at' => '02082021'])
+        ];
+    }
+}
 

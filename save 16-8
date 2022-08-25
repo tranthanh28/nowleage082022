@@ -1,0 +1,29 @@
+Integrity constraint violation: 1052 Column 'id' in field list is ambiguous (SQL: select id, CONCAT(internal_code,' ',name) as text, `supplier_products`.`supplier_id` as `pivot_supplier_id`, `supplier_products`.`product_id` as `pivot_product_id` from `products` inner join `supplier_products` on `products`.`id` = `supplier_products`.`product_id` where `supplier_products`.`supplier_id` = 24 and `products`.`deleted_at` is null order by `name` asc limit 20 offset 0) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in field list is ambiguous (SQL: select id, CONCAT(internal_code,' ',name) as text, `supplier_products`.`supplier_id` as `pivot_supplier_id`, `supplier_products`.`product_id` as `pivot_product_id` from `products` inner join `supplier_products` on `products`.`id` = `supplier_products`.`product_id` where `supplier_products`.`supplier_id` = 24 and `products`.`deleted_at` is null order by `name` asc limit 20 offset 0) at /home/monet/proteanstudios.com/public_html/order_bak/vendor/laravel/framework/src/Illuminate/Database/Connection.php:678)
+[stacktrace]
+
+
+
+/* fallback */
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(fonts/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+  }
+  
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+  }
+  

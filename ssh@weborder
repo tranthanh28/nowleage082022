@@ -25,7 +25,21 @@ r)6WRuv%gVdd($*E
 Pass DB stg : nrOAzubPOct8
 
 
-==============================
+============================== step release
+
+1 merge vào nhánh develop
+2 chạy php artisan vue-i18n:generate
+3 Chạy npm run production/ npm run dev
+4 git push
+5 SSH vào server
+6 pull nhánh develop về.
+7 php artisan migrate
+8 kiểm tra nếu có seeder thì chạy chỉ seeder đó nhé
+9 nếu composer có thay đổi (ví vụ tạo cài thêm package mới) thì chạy `composer install` nhé
+chú ý không được làm change 2 file token.json  ..secret.json  trong thư mục storage/google
+
+==============================================
+
 merge vào nhánh stagging_29072022
 Chạy npm run development
 SSH vào server
@@ -66,7 +80,7 @@ cd /var/www/html/clinic-form/
 
 ====================================================product weborder
 https://drive.google.com/file/d/1_LoHmGBHO56dJXVF6RGYcP0bDBzB6Xpq/view?usp=sharing
-ssh -i ~/.ssh/motorlinks-monet -p 10022 monet@sv95.xserver.jp
+ssh -i ~/.ssh/monet.key -p 10022 monet@sv95.xserver.jp
 pass: Motorlinks@55
 
 cd /home/monet/

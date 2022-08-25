@@ -24,3 +24,10 @@ git branch -M main
 git remote add origin URL
 git remote remove origin
 git remote show origin
+
+
+==============================How do I force "git pull" to overwrite local files?
+git checkout master
+git branch new-branch-to-save-current-commits
+git fetch --all
+git reset --hard origin/master

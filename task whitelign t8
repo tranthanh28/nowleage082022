@@ -23,6 +23,18 @@ Xử lý lưu option_simulation => hiển thị form=>confirm =>mail => pdf
 
 
 =========================================16/8
+Gỡ require Q14.1
+Sửa text.
+release whitelign
 
-task tt8 ,
+
+tao merge weborder add product order
 est diamond staff
+task tt8 ,
+
+============================================18/8
+
+Xóa cột simulation trên stg và prd.
+
+Đã setting queue chưa?
+

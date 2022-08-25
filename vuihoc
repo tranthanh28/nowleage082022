@@ -1,0 +1,33 @@
+buổi học tiếp theo: chính là buổi học classin của lớp đó.
+
+đồng bộ classin là như nào.
+
+si so trong pas_class_onlines và slot_class_in trong pas_classes là 1.
+
+Slot và slot_class_in
+
+
+status của pas_weeks chưa thấy có trong db. giao diện có.
+
+tạo Các session trong các topic tuần học chưa được thể hiện trên figma=> được lấy từ session gốc
+Chọn các chủ đề thì sẽ tự có các session=> không sửa được các chủ đề
+
+figma chưa thấy phần thêm link khi tạo lớp học classin
+
+Khung chương trình.
++mã khung.
++ active và inactive
+
+Khi thêm chủ đề vào 1 lớp học cụ thể theo tuần thì chủ đề đó không liên quan với chủ đề với khung chương trình.
+thêm sửa xóa trong KCT thì có ảnh hưởng đến các phần chương trình đã add vào lớp học.
+
+
+Thông tin KCT có thể sửa được k=> chưa thấy api
+
+================================================================
+
+Tạo migration các bảng liên quan khung chương trình, chuyên đề, chủ đề, session, Loại khung
+
+Tạo api list.
+
+
