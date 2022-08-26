@@ -208,3 +208,14 @@ class AlbumResource extends JsonResource
     }
 }
 
+//
+
+check early resource
+
+Eager load vs Lazy load vs Lazy eager load
+https://sam-ngu.medium.com/avoiding-infinite-nested-relationship-loop-in-laravel-api-resource-35685898b360
+
+How do these functions solve our problem?
+We use the with() or loadMissing()function to eager load the relationships.
+Remember, with() can only be called from Eloquent Query, so it is best to use in the index method of the controller. loadMissing() can only be called from a retrieved Model, so it’s best to use in the show method in the controller.
+

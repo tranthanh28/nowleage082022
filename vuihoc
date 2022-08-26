@@ -30,4 +30,40 @@ Tạo migration các bảng liên quan khung chương trình, chuyên đề, ch�
 
 Tạo api list.
 
+============================================================26/8
+
+Tạo api list kiểu khung chương trình
+[
+nang cao => [
+	[
+	'id'=> 1,
+	'level'=> 'co ban'
+	],
+	[
+	'id'=>2,
+	'level'=> 'nang cao'
+	]
+],
+tang cuong => [
+	[
+	'id'=> 3,
+	'level'=> 'co ban'
+	],
+	[
+	'id'=>4,
+	'level'=> 'nang cao'
+	]
+]
+] 
+
+
+Tạo api list danh sach môn học: chung
+
+Thêm xử lý ở phía khung chương trình:
+	+hiển thị số lượng lớp đang học, số lượng lớp đã đăng kí
+	+Khi detail khung chương trình thì gắn thêm chuyên đề, chủ đề, session.
+	
+
+
+
 

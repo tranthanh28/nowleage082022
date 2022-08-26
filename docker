@@ -36,3 +36,7 @@ gnome-software
 rm -rf vender
 composer install --no-cache
 
+// xóa toàn bộ c
+docker system prune
+docker system prune -a
+
