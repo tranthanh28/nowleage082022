@@ -219,3 +219,30 @@ How do these functions solve our problem?
 We use the with() or loadMissing()function to eager load the relationships.
 Remember, with() can only be called from Eloquent Query, so it is best to use in the index method of the controller. loadMissing() can only be called from a retrieved Model, so it’s best to use in the show method in the controller.
 
+
+//////////////////////////////////////////////////log : query
+    \DB::listen(function($query) {
+        var_dump($query->sql);
+    });
+
+
+////////////////////////////////////////////////////// xoa nested
+  static::deleting(function ($chapter) {
+            foreach ($chapter->topics as $topic) {
+                $topic->delete();
+            }
+        });
+topic:
+        static::deleted(function($topic) {
+            $topic->sections()->delete();
+        });
+        
+ /////////////////////////////
+ create()
+ insert() not create created_at, updated_at/// create nhiều mảng được.
+ 
+ 
+ ///////////////////////////
+ 
+ 
+ 
