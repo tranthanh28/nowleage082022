@@ -242,7 +242,45 @@ topic:
  insert() not create created_at, updated_at/// create nhiều mảng được.
  
  
- ///////////////////////////
+ ///////////////////////////early loading
+ 
+     public function appliedClass():int
+    {
+        return $this->subClasses()->whereIn('is_active', [PasSubClass::HAPPENNING, PasSubClass::WAITING_FOR_OPENING])->count();
+    }
+
+    public function applyingClass():int
+    {
+        return $this->subClasses()->where('is_active', PasSubClass::FINISHED)->count();
+    }
+
+    public function subClasses(): \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->hasMany(PasSubClass::class, 'program_id', 'id');
+    }
+    
+    
+ 
+    ----------------- Bỏ phần hàm $this->subClasses() => early loading.. with(subClasses)
+    
+         public function appliedClass():int
+    {
+        return $this->subClasses->whereIn('is_active', [PasSubClass::HAPPENNING, PasSubClass::WAITING_FOR_OPENING])->count();
+    }
+
+    public function applyingClass():int
+    {
+        return $this->subClasses->where('is_active', PasSubClass::FINISHED)->count();
+    }
+
+    public function subClasses(): \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->hasMany(PasSubClass::class, 'program_id', 'id');
+    }
+    
+ 
+ 
+ 
  
  
  

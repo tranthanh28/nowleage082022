@@ -7,3 +7,8 @@ php artisan db:seed
 php artisan db:seed --class=UserSeeder
 
 composer dump-autoload
+
+
+Validate:
+	'email' => 'unique:App\Models\User,email_address'
+	'user_id' => 'exists:App\Models\User,id'
